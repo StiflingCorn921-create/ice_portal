@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import ProductCard from "./components/ProductCard.jsx";
@@ -13,7 +13,17 @@ const PRODUCTS = [
 ];
 
 export default function App() {
-  const [cart, setCart] = useState({});
+  const [cart, setCart] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem("ice-cart")) || {};
+    } catch {
+      return {};
+    }
+  });
+
+  useEffect(() => {
+    localStorage.setItem("ice-cart", JSON.stringify(cart));
+  }, [cart]);
   const [orderPlaced, setOrderPlaced] = useState(null);
 
   const addToCart = (id) =>
