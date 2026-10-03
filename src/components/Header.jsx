@@ -6,7 +6,7 @@ export default function Header({ cartCount }) {
       <nav className="flex gap-4 sm:gap-6">
         <a href="#products" className="text-ice no-underline hover:text-white hover:underline">Products</a>
         <a href="#order" className="text-ice no-underline hover:text-white hover:underline">Order ({cartCount})</a>
-        <a href="#contact" className="text-ice no-underline hover:text-white hover:underline">Contact</a>
+        <a href="#message" className="text-ice no-underline hover:text-white hover:underline">Contact</a>
       </nav>
     </header>
   );

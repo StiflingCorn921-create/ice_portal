@@ -4,6 +4,7 @@ import Hero from "./components/Hero.jsx";
 import ProductCard from "./components/ProductCard.jsx";
 import Cart from "./components/Cart.jsx";
 import Footer from "./components/Footer.jsx";
+import Contact from "./components/Contact.jsx";
 
 const PRODUCTS = [
   { id: 1, name: "Cube Ice", size: "1 kg", price: 30, note: "Perfect for a few drinks." },
@@ -71,6 +72,7 @@ export default function App() {
             orderPlaced={orderPlaced}
           />
         </section>
+        <Contact />
       </main>
 
       <Footer />
