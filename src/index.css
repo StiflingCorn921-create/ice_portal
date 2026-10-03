@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deep: #0f2e3d;
+  --color-frost: #f2f8fa;
+  --color-ice: #cfeaf1;
+  --color-aqua: #2bb3c9;
+  --color-aqua-dark: #1b8ea1;
+  --color-steel: #5d7885;
+  --color-line: #d3e2e8;
+  --font-display: Georgia, "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-frost);
+  color: var(--color-deep);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
